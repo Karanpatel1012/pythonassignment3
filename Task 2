@@ -1,0 +1,22 @@
+import math
+
+try:
+    number = float(input("Enter the number: "))
+    # Square root of the number
+    if number < 0:
+        print  ("Square root is not defined for negative numbers")
+    else:
+        print(f"square root : {math.sqrt(number)}")
+
+    # Natural logarithm (log base e) of the number
+    if number <=0:
+        print("Natural logarithm is only defined for positive numbers.")
+    else:
+        print(f"logarithm : {math.log(number)}")
+
+    # Sine of the number (in radians)
+    sine_result = math.sin(number)
+    print(f"Sine of {number} radians is: {sine_result}")
+
+except ValueError:
+    print("Invalid input. Please enter a numeric value.")
